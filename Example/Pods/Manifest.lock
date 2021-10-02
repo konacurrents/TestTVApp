@@ -1,0 +1,16 @@
+PODS:
+  - TestTVPod (0.1.0)
+
+DEPENDENCIES:
+  - TestTVPod (from `../`)
+
+EXTERNAL SOURCES:
+  TestTVPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TestTVPod: 73786f453a3a88d81ae5e8ca627183699aa55fed
+
+PODFILE CHECKSUM: c6f84b79587dd6d3cebddc06c10b46dee6037731
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,63 @@
+
+### Stack
+
+```
+   CocoaPods : 1.10.1
+        Ruby : ruby 2.6.3p62 (2019-04-16 revision 67580) [universal.x86_64-darwin20]
+    RubyGems : 3.0.3
+        Host : macOS 11.3.1 (20E241)
+       Xcode : 12.5 (12E262)
+         Git : git version 2.30.1 (Apple Git-130)
+Ruby lib dir : /System/Library/Frameworks/Ruby.framework/Versions/2.6/usr/lib
+Repositories : artsy-specs - git - https://github.com/artsy/Specs.git @ 55b2a0e46468586d3d93cd77a78dfe12684aca54
+
+               KnowledgeSharkPods - git - https://github.com/konacurrents/KnowledgeSharkPods.git @ 94bf0286a5126013bb6d92479ac5b075fc3aa55f
+
+               SOMEONE_ELSE_KSFramework - file system
+               TestPods - file system
+               TOCropViewController-main - file system
+               trunk - CDN - https://cdn.cocoapods.org/
+```
+
+### Installation Source
+
+```
+Executable Path: /usr/local/bin/pod
+```
+
+### Plugins
+
+```
+cocoapods-deintegrate : 1.0.4
+cocoapods-plugins     : 1.0.0
+cocoapods-search      : 1.0.0
+cocoapods-trunk       : 1.5.0
+cocoapods-try         : 1.2.0
+```
+
+### Podfile
+
+```ruby
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'TestTVPod_Example' do
+  pod 'TestTVPod', :path => '../'
+
+  target 'TestTVPod_Tests' do
+    inherit! :search_paths
+  end
+
+  target 'TVApp' do
+    inherit! :search_paths
+  end
+
+  target 'WatchAPP' do
+    inherit! :search_paths
+  end
+
+
+end
+```
+

@@ -7,7 +7,15 @@ target 'TestTVPod_Example' do
 
   target 'TestTVPod_Tests' do
     inherit! :search_paths
-
-    
   end
+
+  target 'TVApp' do
+    inherit! :search_paths
+  end
+
+  target 'WatchAPP' do
+    inherit! :search_paths
+  end
+
+
 end
